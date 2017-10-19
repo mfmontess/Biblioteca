@@ -57,18 +57,25 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="Tables" />
+    <Folder Include="Scripts" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="Libros.sql" />
-    <Build Include="Perfiles.sql" />
-    <Build Include="Usuarios.sql" />
-    <Build Include="Estados_Libros.sql" />
-    <Build Include="Usuarios_Libros.sql" />
-    <Build Include="Categorias_Libros.sql" />
-    <Build Include="Libros_Categorias.sql" />
-    <Build Include="Formatos_Archivo.sql" />
-    <Build Include="Biblioteca.sql" />
-    <Build Include="Opciones.sql" />
-    <Build Include="Opciones_Perfiles.sql" />
+    <Build Include="Tables\Biblioteca.sql" />
+    <Build Include="Tables\Categorias_Libros.sql" />
+    <Build Include="Tables\Estados_Libros.sql" />
+    <Build Include="Tables\Formatos_Archivo.sql" />
+    <Build Include="Tables\Libros.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Tables\Libros_Categorias.sql" />
+    <Build Include="Tables\Opciones.sql" />
+    <Build Include="Tables\Opciones_Perfiles.sql" />
+    <Build Include="Tables\Perfiles.sql" />
+    <Build Include="Tables\Usuarios.sql" />
+    <Build Include="Tables\Usuarios_Libros.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\Inserts.sql" />
   </ItemGroup>
 </Project>
